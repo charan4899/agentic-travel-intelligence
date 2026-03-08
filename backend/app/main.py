@@ -29,7 +29,10 @@ from app.services.transforms.budget_service import get_destination_budget_compar
 app = FastAPI(title="Agentic Travel Intelligence API")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://agentic-travel-eight.vercel.app/",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
