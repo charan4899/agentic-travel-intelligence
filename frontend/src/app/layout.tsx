@@ -27,16 +27,27 @@ export default function RootLayout({
       <body className="bg-slate-950 text-white antialiased">
         <nav className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-            <div className="text-sm font-semibold tracking-[0.14em] text-white">
-              Travel Intelligence
+            <div>
+              <p className="text-sm font-semibold tracking-[0.16em] text-white">
+                Travel Intelligence
+              </p>
+              <p className="mt-1 text-xs text-slate-500">
+                Analytics dashboard and AI travel assistant
+              </p>
             </div>
 
-            <div className="flex gap-6 text-sm text-slate-300">
-              <a href="/" className="transition hover:text-white">
+            <div className="flex items-center gap-3 text-sm text-slate-300">
+              <a
+                href="/"
+                className="rounded-full border border-white/10 px-4 py-2 transition hover:border-white/20 hover:bg-white/[0.05] hover:text-white"
+              >
                 Dashboard
               </a>
 
-              <a href="/monitor" className="transition hover:text-white">
+              <a
+                href="/monitor"
+                className="rounded-full border border-white/10 px-4 py-2 transition hover:border-white/20 hover:bg-white/[0.05] hover:text-white"
+              >
                 Monitor
               </a>
             </div>
