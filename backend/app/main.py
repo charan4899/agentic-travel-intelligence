@@ -31,7 +31,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://agentic-travel-eight.vercel.app",
+        "https://agentic-travel-intelligence.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
